@@ -1,2 +1,0 @@
-/usr/bin/ar qc libGLShader.a CMakeFiles/GLShader.dir/src/shader.cpp.o
-/usr/bin/ranlib libGLShader.a

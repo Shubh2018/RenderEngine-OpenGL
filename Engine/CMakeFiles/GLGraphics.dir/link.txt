@@ -1,2 +1,0 @@
-/usr/bin/ar qc libGLGraphics.a CMakeFiles/GLGraphics.dir/src/Graphics.cpp.o
-/usr/bin/ranlib libGLGraphics.a
