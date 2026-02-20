@@ -1,0 +1,22 @@
+# Hashes of file build rules.
+063f095ccb9635b270e0cde1981460c0 libs/GLFW/CMakeFiles/uninstall
+615f060e429c029e870f2a5f3ff67d24 libs/GLFW/src/CMakeFiles/update_mappings
+7ba1e9034e9578bfe15591c8cb6ddedd libs/GLFW/src/fractional-scale-v1-client-protocol-code.h
+1ec9f984c7cd9f7b99a7b523a7e02f6d libs/GLFW/src/fractional-scale-v1-client-protocol.h
+130caaf9e73287436e3700cf9debbbc8 libs/GLFW/src/idle-inhibit-unstable-v1-client-protocol-code.h
+f5fec96ef698dd58df7ffd1829a4b02c libs/GLFW/src/idle-inhibit-unstable-v1-client-protocol.h
+e5d1f4990816ea78924592b3d0a55ecd libs/GLFW/src/pointer-constraints-unstable-v1-client-protocol-code.h
+bc2af72c3c69d9ba8eeb8245e7af7861 libs/GLFW/src/pointer-constraints-unstable-v1-client-protocol.h
+85bf84cfa87e550ff170faf82b98ce4c libs/GLFW/src/relative-pointer-unstable-v1-client-protocol-code.h
+261069cfcec60112342dd8f4e5fb5ff9 libs/GLFW/src/relative-pointer-unstable-v1-client-protocol.h
+8250b1c9c9924c7d07ba1d7f710987ac libs/GLFW/src/viewporter-client-protocol-code.h
+7d3e512959612eda7bcf0f05291863dc libs/GLFW/src/viewporter-client-protocol.h
+894d3993984d8810da047a29deea5e8a libs/GLFW/src/wayland-client-protocol-code.h
+efbfb9a36e25068d7df64bef6823f340 libs/GLFW/src/wayland-client-protocol.h
+5117913212199cc894fc5d9da34ad8f4 libs/GLFW/src/xdg-activation-v1-client-protocol-code.h
+c9d949df5b026e244bb1f8fa3647eb78 libs/GLFW/src/xdg-activation-v1-client-protocol.h
+dba93d9f8bcc3e752f5d02c372020528 libs/GLFW/src/xdg-decoration-unstable-v1-client-protocol-code.h
+c8cee2ec8af24b3aca488d8bd6738a20 libs/GLFW/src/xdg-decoration-unstable-v1-client-protocol.h
+67107eb74dfd50d4238d89a6392ea18e libs/GLFW/src/xdg-shell-client-protocol-code.h
+c433ecb57e2a6469a214ae1288d13570 libs/GLFW/src/xdg-shell-client-protocol.h
+80eba07000d7dbc96e779276b07c0540 libs/gladsources/glad_gl_core_33/include/KHR/khrplatform.h

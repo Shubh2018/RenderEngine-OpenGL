@@ -4,8 +4,9 @@
 #include <iostream>
 #include <memory>
 
+#include <window.h>
 #include <shader.h>
-#include <stb_image.h>
+#include <texture.h>
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void processInput(GLFWwindow *window);
@@ -15,21 +16,10 @@ const unsigned int SCR_HEIGHT = 600;
 
 int main()
 {
-    glfwInit();
-    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
-    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 4);
-    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+    std::unique_ptr<Window> window = std::make_unique<Window>("OpenGL", SCR_WIDTH, SCR_HEIGHT);
 
-    GLFWwindow* window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "LearnOpenGL", NULL, NULL);
-    if (window == NULL)
-    {
-        std::cout << "Failed to create GLFW window" << std::endl;
-        glfwTerminate();
-        return -1;
-    }
-
-    glfwMakeContextCurrent(window);
-    glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
+    window->MakeCurrent();
+    window->SetFrameBufferCallback(framebuffer_size_callback);
 
     if (!gladLoadGL(glfwGetProcAddress))
     {
@@ -76,67 +66,23 @@ int main()
     glBindBuffer(GL_ARRAY_BUFFER, 0); 
     glBindVertexArray(0); 
 
-    unsigned int texture1, texture2;
-    glGenTextures(1, &texture1);
-    glGenTextures(1, &texture2);
-
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);	
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-
-    int width, height, nrChannels;
-    unsigned char* data = stbi_load(R"(./resources/textures/container.jpg)", &width, &height, &nrChannels, 0);
-
-    stbi_set_flip_vertically_on_load(true);
-
-    if(!data)
-    {
-        std::cout << "Texture Loading Failed " << stbi_failure_reason() << std::endl;
-        return -1;
-    }
-
-    glActiveTexture(GL_TEXTURE0);
-    glBindTexture(GL_TEXTURE_2D, texture1);
-    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
-
-    glGenerateMipmap(GL_TEXTURE_2D);
-
-    stbi_image_free(data);
-
-    data = stbi_load(R"(./resources/textures/awesomeface.png)", &width, &height, &nrChannels, 0);
-
-    if(!data)
-    {
-        std::cout << "Texture Loading Failed " << stbi_failure_reason() << std::endl;
-        return -1;
-    }
-
-    glActiveTexture(GL_TEXTURE1);
-    glBindTexture(GL_TEXTURE_2D, texture2);
-    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, data);
-
-    glGenerateMipmap(GL_TEXTURE_2D);
-
-    stbi_image_free(data);
+    std::unique_ptr<Texture> texture1 = std::make_unique<Texture>(R"(./resources/textures/container.jpg)", GL_RGB);
+    std::unique_ptr<Texture> texture2 = std::make_unique<Texture>(R"(./resources/textures/awesomeface.png)", GL_RGBA);
 
     shader->Use();
 
     glUniform1i(glGetUniformLocation(shader->Handle(), "tex1"), 0);
     glUniform1i(glGetUniformLocation(shader->Handle(), "tex2"), 1);
 
-    while (!glfwWindowShouldClose(window))
+    while (!window->WindowShouldClose())
     {
-        processInput(window);
+        processInput(window->GetWindow());
 
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
 
-        glActiveTexture(GL_TEXTURE0);
-        glBindTexture(GL_TEXTURE_2D, texture1);
-
-        glActiveTexture(GL_TEXTURE1);
-        glBindTexture(GL_TEXTURE_2D, texture2);
+        texture1->ActiveTexture(GL_TEXTURE0);
+        texture2->ActiveTexture(GL_TEXTURE1);
 
         shader->Use();
 
@@ -144,7 +90,7 @@ int main()
 
         glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
  
-        glfwSwapBuffers(window);
+        glfwSwapBuffers(window->GetWindow());
         glfwPollEvents();
     }
 
