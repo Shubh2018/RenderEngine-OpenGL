@@ -5,19 +5,19 @@
 
 class Graphics
 {
-    private:
+private:
 
     unsigned int VAO, VBO, EBO;
 
-    public:
+public:
 
     Graphics();
 
-    void CreatePrimitive(float *vertices, unsigned int *indices, unsigned int vertexCound, unsigned int indexCound);
+    void CreateQuad();
     void BindBuffer();
     void UnbindBuffer();
 
-    void DrawBuffer();
+    void Draw();
 
     ~Graphics();
 };

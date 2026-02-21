@@ -1,11 +1,13 @@
 #include <texture.h>
 
+#include <stb_image.h>
+
 Texture::Texture()
 {
     m_texture = 0;
 }
 
-Texture::Texture(std::string texturePath, GLenum format)
+Texture::Texture(std::string texturePath, GLenum format, GLenum texture)
 {
     std::cout << "Using Texture Class!!!!" << std::endl;
     glGenTextures(1, &m_texture);
@@ -26,6 +28,7 @@ Texture::Texture(std::string texturePath, GLenum format)
         return;
     }
 
+    ActiveTexture(texture);
     glBindTexture(GL_TEXTURE_2D, m_texture);
     glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, format, GL_UNSIGNED_BYTE, data);
 

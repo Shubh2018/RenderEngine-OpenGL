@@ -1,7 +1,6 @@
 #pragma once
 
 #include <glad/gl.h>
-#include <stb_image.h>
 
 #include <iostream>
 #include <string>
@@ -13,7 +12,7 @@ class Texture
 
     public:
         Texture();
-        Texture(std::string texturePath, GLenum format);
+        Texture(std::string texturePath, GLenum format, GLenum texture);
 
         void ActiveTexture(GLenum texture);
 

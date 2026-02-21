@@ -32,7 +32,15 @@ Window::Window(std::string windowName, int width, int height)
         return;
     }
 
+    this->MakeCurrent();
+
     std::cout << "GLWindow Class"<< std::endl;
+
+    if (!gladLoadGL(glfwGetProcAddress))
+    {
+        std::cout << "Failed to initialize GLAD" << std::endl;
+        return;
+    }
 }
 
 void Window::Terminate()
