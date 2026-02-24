@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.25)
 
-set(LINK_LIBS glad_gl_core_33 glfw window graphics shader texture)
+set(LINK_LIBS glad_gl_core_33 glfw window graphics shader texture glm::glm)
 
 file(COPY resources DESTINATION ${CMAKE_BINARY_DIR})
 

@@ -102,6 +102,7 @@ main/App: Engine/libwindow.a
 main/App: Engine/libgraphics.a
 main/App: Engine/libshader.a
 main/App: Engine/libtexture.a
+main/App: libs/glm/glm/libglm.a
 main/App: libs/libglad_gl_core_33.a
 main/App: libs/GLFW/src/libglfw3.a
 main/App: /usr/lib64/librt.a

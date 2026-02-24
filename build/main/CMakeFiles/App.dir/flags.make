@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/g++
 CXX_DEFINES = -DSTB_IMAGE_IMPLEMENTATION
 
-CXX_INCLUDES = -I/home/Shubh/Desktop/OpenGL/build/libs/gladsources/glad_gl_core_33/include -I/home/Shubh/Desktop/OpenGL/libs/GLFW/include -I/home/Shubh/Desktop/OpenGL/Engine/include -I/home/Shubh/Desktop/OpenGL/libs/./stb_image
+CXX_INCLUDES = -I/home/Shubh/Desktop/OpenGL/build/libs/gladsources/glad_gl_core_33/include -I/home/Shubh/Desktop/OpenGL/libs/GLFW/include -I/home/Shubh/Desktop/OpenGL/Engine/include -I/home/Shubh/Desktop/OpenGL/libs/./stb_image -I/home/Shubh/Desktop/OpenGL/libs/glm
 
 CXX_FLAGS = -g
 

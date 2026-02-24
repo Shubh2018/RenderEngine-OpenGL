@@ -1,0 +1,335 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						8,
+						9
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "libs",
+					"childIndexes" : 
+					[
+						2,
+						5,
+						6
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-libs-Debug-ec580da4e47c3b0e73da.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "libs",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "libs/GLFW",
+					"childIndexes" : 
+					[
+						3,
+						4
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-libs.GLFW-Debug-c03b71f7e2aa835ba225.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.4"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "libs/GLFW",
+					"targetIndexes" : 
+					[
+						8
+					]
+				},
+				{
+					"build" : "libs/GLFW/src",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-libs.GLFW.src-Debug-c0ce6e74af228ef1cf9c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.4"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 1,
+					"source" : "libs/GLFW/src",
+					"targetIndexes" : 
+					[
+						3,
+						9
+					]
+				},
+				{
+					"build" : "libs/GLFW/docs",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-libs.GLFW.docs-Debug-c3e59981ba5faa47b29c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.4"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 1,
+					"source" : "libs/GLFW/docs",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "libs/glad_cmake",
+					"jsonFile" : "directory-libs.glad_cmake-Debug-abe2cd623e88e003304a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 2,
+					"source" : "libs/GLAD/cmake"
+				},
+				{
+					"build" : "libs/glm",
+					"childIndexes" : 
+					[
+						7
+					],
+					"jsonFile" : "directory-libs.glm-Debug-44c86d80c1bd93f510b3.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.6"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 3,
+					"source" : "libs/glm"
+				},
+				{
+					"build" : "libs/glm/glm",
+					"jsonFile" : "directory-libs.glm.glm-Debug-cdeeb9f9b6cfd4b776d1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.6"
+					},
+					"parentIndex" : 6,
+					"projectIndex" : 3,
+					"source" : "libs/glm/glm",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "Engine",
+					"jsonFile" : "directory-Engine-Debug-5a33bb95d3cb2d80b86d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "Engine",
+					"targetIndexes" : 
+					[
+						5,
+						6,
+						7,
+						10
+					]
+				},
+				{
+					"build" : "main",
+					"jsonFile" : "directory-main-Debug-c59558c0a3fb20727b44.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "main",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						8,
+						9
+					],
+					"name" : "OpenGL",
+					"targetIndexes" : 
+					[
+						0,
+						2,
+						5,
+						6,
+						7,
+						10
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2,
+						3,
+						4
+					],
+					"name" : "GLFW",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						3,
+						8,
+						9
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						5
+					],
+					"name" : "glad",
+					"parentIndex" : 0
+				},
+				{
+					"directoryIndexes" : 
+					[
+						6,
+						7
+					],
+					"name" : "glm",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 9,
+					"id" : "App::@15c4a824ab2728a3f5e7",
+					"jsonFile" : "target-App-Debug-ab73aeffdf4cf13860e3.json",
+					"name" : "App",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "docs::@7d7656acbf47d94b5795",
+					"jsonFile" : "target-docs-Debug-ddb0a1f1a1fb7645ed9b.json",
+					"name" : "docs",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "glad_gl_core_33::@10801ec9068017628f26",
+					"jsonFile" : "target-glad_gl_core_33-Debug-2e1253cfa363fd0f050f.json",
+					"name" : "glad_gl_core_33",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "glfw::@ec1b498069e66c23ec05",
+					"jsonFile" : "target-glfw-Debug-5504385640ed299bd7e4.json",
+					"name" : "glfw",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "glm::@9689ec0f31a21d795b02",
+					"jsonFile" : "target-glm-Debug-4d264140108713f0fe4f.json",
+					"name" : "glm",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "graphics::@8f69bdd092c897d92c1e",
+					"jsonFile" : "target-graphics-Debug-95a407c08d4292465a52.json",
+					"name" : "graphics",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "shader::@8f69bdd092c897d92c1e",
+					"jsonFile" : "target-shader-Debug-7d65f711b15106c71399.json",
+					"name" : "shader",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "texture::@8f69bdd092c897d92c1e",
+					"jsonFile" : "target-texture-Debug-6694bc1f06a8d9acf022.json",
+					"name" : "texture",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "uninstall::@19fa6990a27c2de0d8bc",
+					"jsonFile" : "target-uninstall-Debug-7bc2819b4a1272213e16.json",
+					"name" : "uninstall",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "update_mappings::@ec1b498069e66c23ec05",
+					"jsonFile" : "target-update_mappings-Debug-67980f4aaab12bba7fad.json",
+					"name" : "update_mappings",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "window::@8f69bdd092c897d92c1e",
+					"jsonFile" : "target-window-Debug-7a05bcf24db040b2e4ef.json",
+					"name" : "window",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/Shubh/Desktop/OpenGL/build",
+		"source" : "/home/Shubh/Desktop/OpenGL"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

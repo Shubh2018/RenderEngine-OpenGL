@@ -227,6 +227,19 @@ docs/fast:
 .PHONY : docs/fast
 
 #=============================================================================
+# Target rules for targets named glm
+
+# Build rule for target.
+glm: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glm
+.PHONY : glm
+
+# fast build rule for target.
+glm/fast:
+	$(MAKE) $(MAKESILENT) -f libs/glm/glm/CMakeFiles/glm.dir/build.make libs/glm/glm/CMakeFiles/glm.dir/build
+.PHONY : glm/fast
+
+#=============================================================================
 # Target rules for targets named window
 
 # Build rule for target.
@@ -309,6 +322,7 @@ help:
 	@echo "... App"
 	@echo "... glad_gl_core_33"
 	@echo "... glfw"
+	@echo "... glm"
 	@echo "... graphics"
 	@echo "... shader"
 	@echo "... texture"

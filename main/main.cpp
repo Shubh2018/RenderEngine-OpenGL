@@ -1,6 +1,10 @@
 #include <glad/gl.h>
 #include <GLFW/glfw3.h>
 
+#include <glm/glm.hpp>
+#include <glm/gtc/matrix_transform.hpp>
+#include <glm/gtc/type_ptr.hpp>
+
 #include <iostream>
 #include <memory>
 
@@ -35,6 +39,10 @@ int main()
     glUniform1i(glGetUniformLocation(shader->Handle(), "tex1"), 0);
     glUniform1i(glGetUniformLocation(shader->Handle(), "tex2"), 1);
 
+    glm::vec4 vec(1.f, 0.f, 0.f, 1.f);
+
+    unsigned int transformLoc = glGetUniformLocation(shader->Handle(), "transform");
+
     while (!window->WindowShouldClose())
     {
         processInput(window->GetWindow());
@@ -42,10 +50,19 @@ int main()
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
 
+        shader->Use();
+
+        glm::mat4 trans(1.f);
+
+        trans = glm::translate(trans, glm::vec3(.75f, .75f, 0.0f));
+        trans = glm::rotate(trans, (float)glfwGetTime(), glm::vec3(0.f, 0.f, 1.f));
+        trans = glm::scale(trans, glm::vec3(.5f, .5f, .5f));
+        vec = trans * vec;
+
+        glUniformMatrix4fv(transformLoc, 1, GL_FALSE, glm::value_ptr(trans));
+
         texture1->ActiveTexture(GL_TEXTURE0);
         texture2->ActiveTexture(GL_TEXTURE1);
-
-        //shader->Use();
 
         quad->Draw();
  

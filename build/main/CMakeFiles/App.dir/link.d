@@ -9,6 +9,7 @@ App: \
   ../Engine/libgraphics.a \
   ../Engine/libshader.a \
   ../Engine/libtexture.a \
+  ../libs/glm/glm/libglm.a \
   ../libs/libglad_gl_core_33.a \
   ../libs/GLFW/src/libglfw3.a \
   /usr/lib64/librt.a \
@@ -60,6 +61,8 @@ CMakeFiles/App.dir/main.cpp.o:
 ../Engine/libshader.a:
 
 ../Engine/libtexture.a:
+
+../libs/glm/glm/libglm.a:
 
 ../libs/libglad_gl_core_33.a:
 

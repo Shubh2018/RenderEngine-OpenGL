@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 3.25)
 
 add_subdirectory(./GLFW)
 add_subdirectory(./GLAD/cmake glad_cmake)
+add_subdirectory(./glm)
 
 add_library(stb_image INTERFACE)
 target_include_directories(stb_image INTERFACE ./stb_image)
