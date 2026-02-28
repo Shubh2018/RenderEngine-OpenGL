@@ -1042,7 +1042,7 @@ FIND_PACKAGE_MESSAGE_DETAILS_Doxygen:INTERNAL=[/usr/bin/doxygen][cfound componen
 //Details about finding PkgConfig
 FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/bin/pkg-config][v2.3.0()]
 //Details about finding Python
-FIND_PACKAGE_MESSAGE_DETAILS_Python:INTERNAL=[/usr/bin/python3.14][cfound components: Interpreter ][v3.14.2()]
+FIND_PACKAGE_MESSAGE_DETAILS_Python:INTERNAL=[/usr/bin/python3.14][cfound components: Interpreter ][v3.14.3()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //Details about finding X11
@@ -1393,7 +1393,7 @@ _Python_Development_REASON_FAILURE:INTERNAL=
 //Path to a program.
 _Python_EXECUTABLE:INTERNAL=/usr/bin/python3.14
 //Python Properties
-_Python_INTERPRETER_PROPERTIES:INTERNAL=Python;3;14;2;64;32;<none>;cpython-314-x86_64-linux-gnu;abi3;/usr/lib64/python3.14;/usr/local/lib64/python3.14;/usr/local/lib/python3.14/site-packages;/usr/local/lib64/python3.14/site-packages
+_Python_INTERPRETER_PROPERTIES:INTERNAL=Python;3;14;3;64;32;<none>;cpython-314-x86_64-linux-gnu;abi3;/usr/lib64/python3.14;/usr/local/lib64/python3.14;/usr/local/lib/python3.14/site-packages;/usr/local/lib64/python3.14/site-packages
 _Python_INTERPRETER_SIGNATURE:INTERNAL=5da1bc9426cdb93bc62bc48997978eb2
 //NumPy reason failure
 _Python_NumPy_REASON_FAILURE:INTERNAL=

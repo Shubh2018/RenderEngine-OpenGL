@@ -39,21 +39,25 @@ int main()
     glUniform1i(glGetUniformLocation(shader->Handle(), "tex1"), 0);
     glUniform1i(glGetUniformLocation(shader->Handle(), "tex2"), 1);
 
+    glEnable(GL_DEPTH_TEST);
+
     while (!window->WindowShouldClose())
     {
         processInput(window->GetWindow());
 
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
-        glClear(GL_COLOR_BUFFER_BIT);
+        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
         glm::mat4 model(1.f);
-        model = glm::rotate(model, glm::radians(-55.0f), glm::vec3(1.f, 0.f, 0.f));
+        model = glm::rotate(model, (float)glfwGetTime() * glm::radians(50.0f), glm::vec3(0.5f, 1.f, 0.f));
+        model = glm::scale(model, glm::vec3(0.5f, 0.5f, 0.5f));
 
         glm::mat4 view(1.f);
         view = glm::translate(view, glm::vec3(0.f, 0.f, -3.f));
 
         glm::mat4 projection(1.f);
         projection = glm::perspective(glm::radians(45.0f), 800.f / 600.f, 0.1f, 100.0f);
+
 
         int modelLocation = glGetUniformLocation(shader->Handle(), "model");
         int viewLocation = glGetUniformLocation(shader->Handle(), "view");
