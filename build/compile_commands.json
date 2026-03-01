@@ -169,31 +169,31 @@
 },
 {
   "directory": "/home/Shubh/Desktop/OpenGL/build/Engine",
-  "command": "/usr/bin/g++  -I/home/Shubh/Desktop/OpenGL/Engine/include -I/home/Shubh/Desktop/OpenGL/build/libs/gladsources/glad_gl_core_33/include -I/home/Shubh/Desktop/OpenGL/libs/GLFW/include -g -o CMakeFiles/window.dir/src/window.cpp.o -c /home/Shubh/Desktop/OpenGL/Engine/src/window.cpp",
+  "command": "/usr/bin/g++  -I/home/Shubh/Desktop/OpenGL/Engine/include -I/home/Shubh/Desktop/OpenGL/build/libs/gladsources/glad_gl_core_33/include -I/home/Shubh/Desktop/OpenGL/libs/GLFW/include -I/home/Shubh/Desktop/OpenGL/libs/glm -g -o CMakeFiles/window.dir/src/window.cpp.o -c /home/Shubh/Desktop/OpenGL/Engine/src/window.cpp",
   "file": "/home/Shubh/Desktop/OpenGL/Engine/src/window.cpp",
   "output": "Engine/CMakeFiles/window.dir/src/window.cpp.o"
 },
 {
   "directory": "/home/Shubh/Desktop/OpenGL/build/Engine",
-  "command": "/usr/bin/g++  -I/home/Shubh/Desktop/OpenGL/Engine/include -I/home/Shubh/Desktop/OpenGL/build/libs/gladsources/glad_gl_core_33/include -I/home/Shubh/Desktop/OpenGL/libs/GLFW/include -g -o CMakeFiles/graphics.dir/src/graphics.cpp.o -c /home/Shubh/Desktop/OpenGL/Engine/src/graphics.cpp",
-  "file": "/home/Shubh/Desktop/OpenGL/Engine/src/graphics.cpp",
-  "output": "Engine/CMakeFiles/graphics.dir/src/graphics.cpp.o"
+  "command": "/usr/bin/g++  -I/home/Shubh/Desktop/OpenGL/Engine/include -I/home/Shubh/Desktop/OpenGL/build/libs/gladsources/glad_gl_core_33/include -I/home/Shubh/Desktop/OpenGL/libs/GLFW/include -I/home/Shubh/Desktop/OpenGL/libs/glm -g -o CMakeFiles/graphics.dir/src/mesh.cpp.o -c /home/Shubh/Desktop/OpenGL/Engine/src/mesh.cpp",
+  "file": "/home/Shubh/Desktop/OpenGL/Engine/src/mesh.cpp",
+  "output": "Engine/CMakeFiles/graphics.dir/src/mesh.cpp.o"
 },
 {
   "directory": "/home/Shubh/Desktop/OpenGL/build/Engine",
-  "command": "/usr/bin/g++  -I/home/Shubh/Desktop/OpenGL/Engine/include -I/home/Shubh/Desktop/OpenGL/build/libs/gladsources/glad_gl_core_33/include -I/home/Shubh/Desktop/OpenGL/libs/GLFW/include -g -o CMakeFiles/shader.dir/src/shader.cpp.o -c /home/Shubh/Desktop/OpenGL/Engine/src/shader.cpp",
+  "command": "/usr/bin/g++  -I/home/Shubh/Desktop/OpenGL/Engine/include -I/home/Shubh/Desktop/OpenGL/build/libs/gladsources/glad_gl_core_33/include -I/home/Shubh/Desktop/OpenGL/libs/GLFW/include -I/home/Shubh/Desktop/OpenGL/libs/glm -g -o CMakeFiles/shader.dir/src/shader.cpp.o -c /home/Shubh/Desktop/OpenGL/Engine/src/shader.cpp",
   "file": "/home/Shubh/Desktop/OpenGL/Engine/src/shader.cpp",
   "output": "Engine/CMakeFiles/shader.dir/src/shader.cpp.o"
 },
 {
   "directory": "/home/Shubh/Desktop/OpenGL/build/Engine",
-  "command": "/usr/bin/g++ -DSTB_IMAGE_IMPLEMENTATION -I/home/Shubh/Desktop/OpenGL/Engine/include -I/home/Shubh/Desktop/OpenGL/build/libs/gladsources/glad_gl_core_33/include -I/home/Shubh/Desktop/OpenGL/libs/GLFW/include -I/home/Shubh/Desktop/OpenGL/libs/./stb_image -g -o CMakeFiles/texture.dir/src/texture.cpp.o -c /home/Shubh/Desktop/OpenGL/Engine/src/texture.cpp",
+  "command": "/usr/bin/g++ -DSTB_IMAGE_IMPLEMENTATION -I/home/Shubh/Desktop/OpenGL/Engine/include -I/home/Shubh/Desktop/OpenGL/build/libs/gladsources/glad_gl_core_33/include -I/home/Shubh/Desktop/OpenGL/libs/GLFW/include -I/home/Shubh/Desktop/OpenGL/libs/glm -I/home/Shubh/Desktop/OpenGL/libs/./stb_image -g -o CMakeFiles/texture.dir/src/texture.cpp.o -c /home/Shubh/Desktop/OpenGL/Engine/src/texture.cpp",
   "file": "/home/Shubh/Desktop/OpenGL/Engine/src/texture.cpp",
   "output": "Engine/CMakeFiles/texture.dir/src/texture.cpp.o"
 },
 {
   "directory": "/home/Shubh/Desktop/OpenGL/build/main",
-  "command": "/usr/bin/g++ -DSTB_IMAGE_IMPLEMENTATION -I/home/Shubh/Desktop/OpenGL/build/libs/gladsources/glad_gl_core_33/include -I/home/Shubh/Desktop/OpenGL/libs/GLFW/include -I/home/Shubh/Desktop/OpenGL/Engine/include -I/home/Shubh/Desktop/OpenGL/libs/./stb_image -I/home/Shubh/Desktop/OpenGL/libs/glm -g -o CMakeFiles/App.dir/main.cpp.o -c /home/Shubh/Desktop/OpenGL/main/main.cpp",
+  "command": "/usr/bin/g++ -DSTB_IMAGE_IMPLEMENTATION -I/home/Shubh/Desktop/OpenGL/build/libs/gladsources/glad_gl_core_33/include -I/home/Shubh/Desktop/OpenGL/libs/GLFW/include -I/home/Shubh/Desktop/OpenGL/Engine/include -I/home/Shubh/Desktop/OpenGL/libs/glm -I/home/Shubh/Desktop/OpenGL/libs/./stb_image -g -o CMakeFiles/App.dir/main.cpp.o -c /home/Shubh/Desktop/OpenGL/main/main.cpp",
   "file": "/home/Shubh/Desktop/OpenGL/main/main.cpp",
   "output": "main/CMakeFiles/App.dir/main.cpp.o"
 }

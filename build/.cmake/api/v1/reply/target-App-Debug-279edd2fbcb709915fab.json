@@ -96,11 +96,11 @@
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/home/Shubh/Desktop/OpenGL/libs/./stb_image"
+					"path" : "/home/Shubh/Desktop/OpenGL/libs/glm"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/home/Shubh/Desktop/OpenGL/libs/glm"
+					"path" : "/home/Shubh/Desktop/OpenGL/libs/./stb_image"
 				}
 			],
 			"language" : "CXX",

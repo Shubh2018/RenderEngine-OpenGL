@@ -1,28 +1,30 @@
-#include <graphics.h>
+#include <mesh.h>
 
 #include <iostream>
 
-Graphics::Graphics()
+Mesh::Mesh()
 {
     VBO = VAO = EBO = 0;
 
-    std::cout << "Graphics Class!!" << std::endl;
+    std::cout << "Mesh Class!!" << std::endl;
 }
 
-void Graphics::CreateQuad()
+void Mesh::CreateQuad()
 {
     std::cout << "CreateQuad()" << std::endl;
 
-    float vertices[] = {
-         1.f,  1.f, 1.f, 1.f, 1.f, 1.f, 1.f, 1.f,
-         1.f, -1.f, 1.f, 1.f, 1.f, 1.f, 1.f, 0.f,
-        -1.f, -1.f, 1.f, 1.f, 1.f, 1.f, 0.f, 0.f,
-        -1.f,  1.f, 1.f, 1.f, 1.f, 1.f, 0.f, 1.f,
+    //vertices.push_back({{}, {}})
 
-         1.f,  1.f, -1.f, 1.f, 1.f, 1.f, 1.f, 1.f,
-         1.f, -1.f, -1.f, 1.f, 1.f, 1.f, 1.f, 0.f,
-        -1.f, -1.f, -1.f, 1.f, 1.f, 1.f, 0.f, 0.f,
-        -1.f,  1.f, -1.f, 1.f, 1.f, 1.f, 0.f, 1.f
+    float vertices[] = {
+         1.f,  1.f, 1.f, 1.f, 1.f,
+         1.f, -1.f, 1.f, 1.f, 0.f,
+        -1.f, -1.f, 1.f, 0.f, 0.f,
+        -1.f,  1.f, 1.f, 0.f, 1.f,
+
+         1.f,  1.f, -1.f, 1.f, 1.f,
+         1.f, -1.f, -1.f, 1.f, 0.f,
+        -1.f, -1.f, -1.f, 0.f, 0.f,
+        -1.f,  1.f, -1.f, 0.f, 1.f,
     };
 
     unsigned int indices[] = {  
@@ -57,35 +59,33 @@ void Graphics::CreateQuad()
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
     glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
 
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)0);
-    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(3 * sizeof(float)));
-    glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(6 * sizeof(float)));
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)0);
+    glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)(3 * sizeof(float)));
 
     glEnableVertexAttribArray(0);
     glEnableVertexAttribArray(1);
-    glEnableVertexAttribArray(2);
 
     glBindBuffer(GL_ARRAY_BUFFER, 0); 
     glBindVertexArray(0);
 }
 
-void Graphics::BindBuffer()
+void Mesh::BindBuffer()
 {
     glBindVertexArray(VAO);
 }
 
-void Graphics::Draw()
+void Mesh::Draw()
 {
     glBindVertexArray(VAO);
     glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_INT, 0);
 }
 
-void Graphics::UnbindBuffer()
+void Mesh::UnbindBuffer()
 {
     glBindVertexArray(0);
 }
 
-Graphics::~Graphics()
+Mesh::~Mesh()
 {
     if(VAO != 0)
     {

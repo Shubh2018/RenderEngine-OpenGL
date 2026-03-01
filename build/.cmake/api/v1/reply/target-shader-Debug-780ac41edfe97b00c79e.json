@@ -66,6 +66,10 @@
 				{
 					"backtrace" : 2,
 					"path" : "/home/Shubh/Desktop/OpenGL/libs/GLFW/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/Shubh/Desktop/OpenGL/libs/glm"
 				}
 			],
 			"language" : "CXX",
@@ -84,6 +88,10 @@
 		{
 			"backtrace" : 2,
 			"id" : "glfw::@ec1b498069e66c23ec05"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "glm::@9689ec0f31a21d795b02"
 		}
 	],
 	"id" : "shader::@8f69bdd092c897d92c1e",

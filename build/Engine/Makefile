@@ -217,29 +217,29 @@ texture/fast:
 	cd /home/Shubh/Desktop/OpenGL/build && $(MAKE) $(MAKESILENT) -f Engine/CMakeFiles/texture.dir/build.make Engine/CMakeFiles/texture.dir/build
 .PHONY : texture/fast
 
-src/graphics.o: src/graphics.cpp.o
-.PHONY : src/graphics.o
+src/mesh.o: src/mesh.cpp.o
+.PHONY : src/mesh.o
 
 # target to build an object file
-src/graphics.cpp.o:
-	cd /home/Shubh/Desktop/OpenGL/build && $(MAKE) $(MAKESILENT) -f Engine/CMakeFiles/graphics.dir/build.make Engine/CMakeFiles/graphics.dir/src/graphics.cpp.o
-.PHONY : src/graphics.cpp.o
+src/mesh.cpp.o:
+	cd /home/Shubh/Desktop/OpenGL/build && $(MAKE) $(MAKESILENT) -f Engine/CMakeFiles/graphics.dir/build.make Engine/CMakeFiles/graphics.dir/src/mesh.cpp.o
+.PHONY : src/mesh.cpp.o
 
-src/graphics.i: src/graphics.cpp.i
-.PHONY : src/graphics.i
+src/mesh.i: src/mesh.cpp.i
+.PHONY : src/mesh.i
 
 # target to preprocess a source file
-src/graphics.cpp.i:
-	cd /home/Shubh/Desktop/OpenGL/build && $(MAKE) $(MAKESILENT) -f Engine/CMakeFiles/graphics.dir/build.make Engine/CMakeFiles/graphics.dir/src/graphics.cpp.i
-.PHONY : src/graphics.cpp.i
+src/mesh.cpp.i:
+	cd /home/Shubh/Desktop/OpenGL/build && $(MAKE) $(MAKESILENT) -f Engine/CMakeFiles/graphics.dir/build.make Engine/CMakeFiles/graphics.dir/src/mesh.cpp.i
+.PHONY : src/mesh.cpp.i
 
-src/graphics.s: src/graphics.cpp.s
-.PHONY : src/graphics.s
+src/mesh.s: src/mesh.cpp.s
+.PHONY : src/mesh.s
 
 # target to generate assembly for a file
-src/graphics.cpp.s:
-	cd /home/Shubh/Desktop/OpenGL/build && $(MAKE) $(MAKESILENT) -f Engine/CMakeFiles/graphics.dir/build.make Engine/CMakeFiles/graphics.dir/src/graphics.cpp.s
-.PHONY : src/graphics.cpp.s
+src/mesh.cpp.s:
+	cd /home/Shubh/Desktop/OpenGL/build && $(MAKE) $(MAKESILENT) -f Engine/CMakeFiles/graphics.dir/build.make Engine/CMakeFiles/graphics.dir/src/mesh.cpp.s
+.PHONY : src/mesh.cpp.s
 
 src/shader.o: src/shader.cpp.o
 .PHONY : src/shader.o
@@ -329,9 +329,9 @@ help:
 	@echo "... shader"
 	@echo "... texture"
 	@echo "... window"
-	@echo "... src/graphics.o"
-	@echo "... src/graphics.i"
-	@echo "... src/graphics.s"
+	@echo "... src/mesh.o"
+	@echo "... src/mesh.i"
+	@echo "... src/mesh.s"
 	@echo "... src/shader.o"
 	@echo "... src/shader.i"
 	@echo "... src/shader.s"

@@ -11,7 +11,7 @@
 #include <window.h>
 #include <shader.h>
 #include <texture.h>
-#include <graphics.h>
+#include <mesh.h>
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void processInput(GLFWwindow *window);
@@ -26,7 +26,7 @@ int main()
     // window->MakeCurrent();
     window->SetFrameBufferCallback(framebuffer_size_callback);
 
-    std::unique_ptr<Graphics> quad = std::make_unique<Graphics>();
+    std::unique_ptr<Mesh> quad = std::make_unique<Mesh>();
     quad->CreateQuad();
 
     std::unique_ptr<Shader> shader = std::make_unique<Shader>(R"(./resources/shaders/vertex.glsl)", R"(./resources/shaders/fragment.glsl)");

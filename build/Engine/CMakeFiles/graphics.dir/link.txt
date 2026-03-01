@@ -1,2 +1,2 @@
-/usr/bin/ar qc libgraphics.a CMakeFiles/graphics.dir/src/graphics.cpp.o
+/usr/bin/ar qc libgraphics.a CMakeFiles/graphics.dir/src/mesh.cpp.o
 /usr/bin/ranlib libgraphics.a

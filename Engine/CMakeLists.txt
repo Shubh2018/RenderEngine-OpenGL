@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 3.25)
 
-set(dependencies glad_gl_core_33 glfw)
+set(dependencies glad_gl_core_33 glfw glm::glm)
 
 add_library(window ./src/window.cpp)
-add_library(graphics ./src/graphics.cpp)
+add_library(graphics ./src/mesh.cpp)
 add_library(shader ./src/shader.cpp)
 add_library(texture ./src/texture.cpp)
 
