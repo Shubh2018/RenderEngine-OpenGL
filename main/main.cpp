@@ -27,7 +27,7 @@ int main()
     window->SetFrameBufferCallback(framebuffer_size_callback);
 
     std::unique_ptr<Mesh> quad = std::make_unique<Mesh>();
-    quad->CreateQuad();
+    quad->CreateCube();
 
     std::unique_ptr<Shader> shader = std::make_unique<Shader>(R"(./resources/shaders/vertex.glsl)", R"(./resources/shaders/fragment.glsl)");
 

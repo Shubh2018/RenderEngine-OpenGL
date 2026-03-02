@@ -19,14 +19,14 @@ class Mesh
 
         unsigned int VAO, VBO, EBO;
 
-        // std::vector<Vertex> vertices;
-        // std::vector<unsigned int> indices;
+        std::vector<float> vertices;
+        std::vector<unsigned int> indices;
 
     public:
 
         Mesh();
 
-        void CreateQuad();
+        void CreateCube();
         void BindBuffer();
         void UnbindBuffer();
 
