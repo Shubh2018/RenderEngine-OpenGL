@@ -22,6 +22,8 @@ class Mesh
         std::vector<float> vertices;
         std::vector<unsigned int> indices;
 
+        std::vector<Vertex> vertex;
+
     public:
 
         Mesh();
