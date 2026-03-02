@@ -1,0 +1,16 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/shuc/Desktop/RenderEngine-OpenGL/build/cmake_install.cmake",
+		"C:/Users/shuc/Desktop/RenderEngine-OpenGL/build/libs/cmake_install.cmake",
+		"C:/Users/shuc/Desktop/RenderEngine-OpenGL/build/libs/GLFW/cmake_install.cmake",
+		"C:/Users/shuc/Desktop/RenderEngine-OpenGL/build/libs/GLFW/src/cmake_install.cmake",
+		"C:/Users/shuc/Desktop/RenderEngine-OpenGL/build/libs/GLFW/docs/cmake_install.cmake",
+		"C:/Users/shuc/Desktop/RenderEngine-OpenGL/build/libs/glad_cmake/cmake_install.cmake",
+		"C:/Users/shuc/Desktop/RenderEngine-OpenGL/build/libs/glm/cmake_install.cmake",
+		"C:/Users/shuc/Desktop/RenderEngine-OpenGL/build/libs/glm/glm/cmake_install.cmake",
+		"C:/Users/shuc/Desktop/RenderEngine-OpenGL/build/Engine/cmake_install.cmake",
+		"C:/Users/shuc/Desktop/RenderEngine-OpenGL/build/main/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\shuc\Desktop\RenderEngine-OpenGL\build\libs\gladsources\glad_gl_core_33\src\gl.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\shuc\Desktop\RenderEngine-OpenGL\build\libs\gladsources\glad_gl_core_33\include\KHR\khrplatform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\shuc\Desktop\RenderEngine-OpenGL\build\libs\gladsources\glad_gl_core_33\include\glad\gl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\shuc\Desktop\RenderEngine-OpenGL\build\CMakeFiles\ad60aaa064163595ffeda942a33fe48f\khrplatform.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\shuc\Desktop\RenderEngine-OpenGL\libs\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{02998F6C-9B3F-34D2-9C03-C704739777A1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{D6D248B3-9DC8-3E20-B140-2A8F023DBA48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{59639FB6-F580-3663-A509-5C2ABC3C45D5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

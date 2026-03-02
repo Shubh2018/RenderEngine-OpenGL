@@ -1,0 +1,2 @@
+C:/Users/shuc/Desktop/RenderEngine-OpenGL/CMakeFiles/CMakeScratch/TryCompile-17h6ou/CMakeFiles/cmTC_34cde.dir
+C:/Users/shuc/Desktop/RenderEngine-OpenGL/CMakeFiles/CMakeScratch/TryCompile-17h6ou/CMakeFiles/ALL_BUILD.dir

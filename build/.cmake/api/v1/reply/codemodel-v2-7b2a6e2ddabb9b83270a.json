@@ -1,0 +1,1732 @@
+{
+	"configurations" : 
+	[
+		{
+			"abstractTargets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "Python::Interpreter::@10801ec9068017628f26",
+					"jsonFile" : "target-Python__Interpreter-Debug-7f52c4e21b9c93d3c588.json",
+					"name" : "Python::Interpreter",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Python::InterpreterMultiConfig::@10801ec9068017628f26",
+					"jsonFile" : "target-Python__InterpreterMultiConfig-Debug-e04d90ee8b7a93e1f3ab.json",
+					"name" : "Python::InterpreterMultiConfig",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "Threads::Threads::@19fa6990a27c2de0d8bc",
+					"jsonFile" : "target-Threads__Threads-Debug-c77527efdd5eebb08d87.json",
+					"name" : "Threads::Threads",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "glm-header-only::@9689ec0f31a21d795b02",
+					"jsonFile" : "target-glm-header-only-Debug-bab73f60a1eaa0f1ff08.json",
+					"name" : "glm-header-only",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "stb_image::@10801ec9068017628f26",
+					"jsonFile" : "target-stb_image-Debug-d4b1b53b1086d474c481.json",
+					"name" : "stb_image",
+					"projectIndex" : 0
+				}
+			],
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						8,
+						9
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-f040eec181a89de70dbe.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						5
+					]
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						0,
+						1,
+						4
+					],
+					"build" : "libs",
+					"childIndexes" : 
+					[
+						2,
+						5,
+						6
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-libs-Debug-734d3a35b8c8173684fc.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "libs",
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						2
+					],
+					"build" : "libs/GLFW",
+					"childIndexes" : 
+					[
+						3,
+						4
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-libs.GLFW-Debug-6983f9c6312fbe2e3b69.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.4"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "libs/GLFW",
+					"targetIndexes" : 
+					[
+						1,
+						12
+					]
+				},
+				{
+					"build" : "libs/GLFW/src",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-libs.GLFW.src-Debug-aa1bf43106f1314fa793.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.4"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 1,
+					"source" : "libs/GLFW/src",
+					"targetIndexes" : 
+					[
+						7,
+						13
+					]
+				},
+				{
+					"build" : "libs/GLFW/docs",
+					"jsonFile" : "directory-libs.GLFW.docs-Debug-16e2ecb0a42e7e92cff5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.4"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 1,
+					"source" : "libs/GLFW/docs"
+				},
+				{
+					"build" : "libs/glad_cmake",
+					"jsonFile" : "directory-libs.glad_cmake-Debug-f4008dea6da68b26a8a0.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 2,
+					"source" : "libs/GLAD/cmake",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "libs/glm",
+					"childIndexes" : 
+					[
+						7
+					],
+					"jsonFile" : "directory-libs.glm-Debug-8a0974f6c956822cf119.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.6"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 3,
+					"source" : "libs/glm",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						3
+					],
+					"build" : "libs/glm/glm",
+					"jsonFile" : "directory-libs.glm.glm-Debug-8719f79a0c5d8cf9c58b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.6"
+					},
+					"parentIndex" : 6,
+					"projectIndex" : 3,
+					"source" : "libs/glm/glm",
+					"targetIndexes" : 
+					[
+						8
+					]
+				},
+				{
+					"build" : "Engine",
+					"jsonFile" : "directory-Engine-Debug-ada311b6ef8c12375156.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "Engine",
+					"targetIndexes" : 
+					[
+						9,
+						10,
+						11,
+						14
+					]
+				},
+				{
+					"build" : "main",
+					"jsonFile" : "directory-main-Debug-90eeead68c4afda84708.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "main",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						0,
+						1,
+						4
+					],
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						8,
+						9
+					],
+					"name" : "OpenGL",
+					"targetIndexes" : 
+					[
+						0,
+						4,
+						5,
+						6,
+						9,
+						10,
+						11,
+						14
+					]
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						2
+					],
+					"directoryIndexes" : 
+					[
+						2,
+						3,
+						4
+					],
+					"name" : "GLFW",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						7,
+						12,
+						13
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						5
+					],
+					"name" : "glad",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						3
+					],
+					"directoryIndexes" : 
+					[
+						6,
+						7
+					],
+					"name" : "glm",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						3,
+						8
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-Debug-3ba03439da5f235e85cd.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "ALL_BUILD::@19fa6990a27c2de0d8bc",
+					"jsonFile" : "target-ALL_BUILD-Debug-a65d458d298ee2b5b8f9.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "ALL_BUILD::@106eacb33d70f2311c15",
+					"jsonFile" : "target-ALL_BUILD-Debug-b436c23e2300d15bb7c5.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "ALL_BUILD::@87d16e3dbd78f67ca781",
+					"jsonFile" : "target-ALL_BUILD-Debug-5cbb1182d8e3ec6de348.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "App::@15c4a824ab2728a3f5e7",
+					"jsonFile" : "target-App-Debug-2d405ca7757eb092e06d.json",
+					"name" : "App",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-Debug-b69ff280a78bf02231b7.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "glad_gl_core_33::@10801ec9068017628f26",
+					"jsonFile" : "target-glad_gl_core_33-Debug-8b27648865466fa94f2d.json",
+					"name" : "glad_gl_core_33",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "glfw::@ec1b498069e66c23ec05",
+					"jsonFile" : "target-glfw-Debug-a5a71497ff90db49f1a3.json",
+					"name" : "glfw",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "glm::@9689ec0f31a21d795b02",
+					"jsonFile" : "target-glm-Debug-7da2b3e653bd90f85892.json",
+					"name" : "glm",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "graphics::@8f69bdd092c897d92c1e",
+					"jsonFile" : "target-graphics-Debug-f59cf2639d64169e4f6e.json",
+					"name" : "graphics",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "shader::@8f69bdd092c897d92c1e",
+					"jsonFile" : "target-shader-Debug-5081687345a10a81a4c8.json",
+					"name" : "shader",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "texture::@8f69bdd092c897d92c1e",
+					"jsonFile" : "target-texture-Debug-8b3aa9d6bd006fea7de7.json",
+					"name" : "texture",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "uninstall::@19fa6990a27c2de0d8bc",
+					"jsonFile" : "target-uninstall-Debug-267255bd6c64260fc93e.json",
+					"name" : "uninstall",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "update_mappings::@ec1b498069e66c23ec05",
+					"jsonFile" : "target-update_mappings-Debug-7ad4d151424c4acea9b3.json",
+					"name" : "update_mappings",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "window::@8f69bdd092c897d92c1e",
+					"jsonFile" : "target-window-Debug-8c8b49cce740252f793b.json",
+					"name" : "window",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"abstractTargets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "Python::Interpreter::@10801ec9068017628f26",
+					"jsonFile" : "target-Python__Interpreter-Release-7f52c4e21b9c93d3c588.json",
+					"name" : "Python::Interpreter",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Python::InterpreterMultiConfig::@10801ec9068017628f26",
+					"jsonFile" : "target-Python__InterpreterMultiConfig-Release-e04d90ee8b7a93e1f3ab.json",
+					"name" : "Python::InterpreterMultiConfig",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "Threads::Threads::@19fa6990a27c2de0d8bc",
+					"jsonFile" : "target-Threads__Threads-Release-c77527efdd5eebb08d87.json",
+					"name" : "Threads::Threads",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "glm-header-only::@9689ec0f31a21d795b02",
+					"jsonFile" : "target-glm-header-only-Release-bab73f60a1eaa0f1ff08.json",
+					"name" : "glm-header-only",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "stb_image::@10801ec9068017628f26",
+					"jsonFile" : "target-stb_image-Release-d4b1b53b1086d474c481.json",
+					"name" : "stb_image",
+					"projectIndex" : 0
+				}
+			],
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						8,
+						9
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-f040eec181a89de70dbe.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						5
+					]
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						0,
+						1,
+						4
+					],
+					"build" : "libs",
+					"childIndexes" : 
+					[
+						2,
+						5,
+						6
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-libs-Release-734d3a35b8c8173684fc.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "libs",
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						2
+					],
+					"build" : "libs/GLFW",
+					"childIndexes" : 
+					[
+						3,
+						4
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-libs.GLFW-Release-6983f9c6312fbe2e3b69.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.4"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "libs/GLFW",
+					"targetIndexes" : 
+					[
+						1,
+						12
+					]
+				},
+				{
+					"build" : "libs/GLFW/src",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-libs.GLFW.src-Release-bb66dd013533263d728f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.4"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 1,
+					"source" : "libs/GLFW/src",
+					"targetIndexes" : 
+					[
+						7,
+						13
+					]
+				},
+				{
+					"build" : "libs/GLFW/docs",
+					"jsonFile" : "directory-libs.GLFW.docs-Release-16e2ecb0a42e7e92cff5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.4"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 1,
+					"source" : "libs/GLFW/docs"
+				},
+				{
+					"build" : "libs/glad_cmake",
+					"jsonFile" : "directory-libs.glad_cmake-Release-f4008dea6da68b26a8a0.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 2,
+					"source" : "libs/GLAD/cmake",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "libs/glm",
+					"childIndexes" : 
+					[
+						7
+					],
+					"jsonFile" : "directory-libs.glm-Release-8a0974f6c956822cf119.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.6"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 3,
+					"source" : "libs/glm",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						3
+					],
+					"build" : "libs/glm/glm",
+					"jsonFile" : "directory-libs.glm.glm-Release-8719f79a0c5d8cf9c58b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.6"
+					},
+					"parentIndex" : 6,
+					"projectIndex" : 3,
+					"source" : "libs/glm/glm",
+					"targetIndexes" : 
+					[
+						8
+					]
+				},
+				{
+					"build" : "Engine",
+					"jsonFile" : "directory-Engine-Release-ada311b6ef8c12375156.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "Engine",
+					"targetIndexes" : 
+					[
+						9,
+						10,
+						11,
+						14
+					]
+				},
+				{
+					"build" : "main",
+					"jsonFile" : "directory-main-Release-90eeead68c4afda84708.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "main",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						0,
+						1,
+						4
+					],
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						8,
+						9
+					],
+					"name" : "OpenGL",
+					"targetIndexes" : 
+					[
+						0,
+						4,
+						5,
+						6,
+						9,
+						10,
+						11,
+						14
+					]
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						2
+					],
+					"directoryIndexes" : 
+					[
+						2,
+						3,
+						4
+					],
+					"name" : "GLFW",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						7,
+						12,
+						13
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						5
+					],
+					"name" : "glad",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						3
+					],
+					"directoryIndexes" : 
+					[
+						6,
+						7
+					],
+					"name" : "glm",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						3,
+						8
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-Release-3ba03439da5f235e85cd.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "ALL_BUILD::@19fa6990a27c2de0d8bc",
+					"jsonFile" : "target-ALL_BUILD-Release-a65d458d298ee2b5b8f9.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "ALL_BUILD::@106eacb33d70f2311c15",
+					"jsonFile" : "target-ALL_BUILD-Release-b436c23e2300d15bb7c5.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "ALL_BUILD::@87d16e3dbd78f67ca781",
+					"jsonFile" : "target-ALL_BUILD-Release-5cbb1182d8e3ec6de348.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "App::@15c4a824ab2728a3f5e7",
+					"jsonFile" : "target-App-Release-4308f6f31949f741dc8a.json",
+					"name" : "App",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-Release-b69ff280a78bf02231b7.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "glad_gl_core_33::@10801ec9068017628f26",
+					"jsonFile" : "target-glad_gl_core_33-Release-8c84381a1d0b82ff491c.json",
+					"name" : "glad_gl_core_33",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "glfw::@ec1b498069e66c23ec05",
+					"jsonFile" : "target-glfw-Release-a2ee327957d2ce021b94.json",
+					"name" : "glfw",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "glm::@9689ec0f31a21d795b02",
+					"jsonFile" : "target-glm-Release-2237d8c8f3ec311a07bf.json",
+					"name" : "glm",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "graphics::@8f69bdd092c897d92c1e",
+					"jsonFile" : "target-graphics-Release-3db27cbf9e3cfa865b96.json",
+					"name" : "graphics",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "shader::@8f69bdd092c897d92c1e",
+					"jsonFile" : "target-shader-Release-fdf6f9e54342b3e7eec4.json",
+					"name" : "shader",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "texture::@8f69bdd092c897d92c1e",
+					"jsonFile" : "target-texture-Release-abefb8283be11fc2bfb0.json",
+					"name" : "texture",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "uninstall::@19fa6990a27c2de0d8bc",
+					"jsonFile" : "target-uninstall-Release-267255bd6c64260fc93e.json",
+					"name" : "uninstall",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "update_mappings::@ec1b498069e66c23ec05",
+					"jsonFile" : "target-update_mappings-Release-7ad4d151424c4acea9b3.json",
+					"name" : "update_mappings",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "window::@8f69bdd092c897d92c1e",
+					"jsonFile" : "target-window-Release-411179c29ff9c5e5ae64.json",
+					"name" : "window",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"abstractTargets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "Python::Interpreter::@10801ec9068017628f26",
+					"jsonFile" : "target-Python__Interpreter-MinSizeRel-7f52c4e21b9c93d3c588.json",
+					"name" : "Python::Interpreter",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Python::InterpreterMultiConfig::@10801ec9068017628f26",
+					"jsonFile" : "target-Python__InterpreterMultiConfig-MinSizeRel-e04d90ee8b7a93e1f3ab.json",
+					"name" : "Python::InterpreterMultiConfig",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "Threads::Threads::@19fa6990a27c2de0d8bc",
+					"jsonFile" : "target-Threads__Threads-MinSizeRel-c77527efdd5eebb08d87.json",
+					"name" : "Threads::Threads",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "glm-header-only::@9689ec0f31a21d795b02",
+					"jsonFile" : "target-glm-header-only-MinSizeRel-bab73f60a1eaa0f1ff08.json",
+					"name" : "glm-header-only",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "stb_image::@10801ec9068017628f26",
+					"jsonFile" : "target-stb_image-MinSizeRel-d4b1b53b1086d474c481.json",
+					"name" : "stb_image",
+					"projectIndex" : 0
+				}
+			],
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						8,
+						9
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-MinSizeRel-f040eec181a89de70dbe.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						5
+					]
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						0,
+						1,
+						4
+					],
+					"build" : "libs",
+					"childIndexes" : 
+					[
+						2,
+						5,
+						6
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-libs-MinSizeRel-734d3a35b8c8173684fc.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "libs",
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						2
+					],
+					"build" : "libs/GLFW",
+					"childIndexes" : 
+					[
+						3,
+						4
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-libs.GLFW-MinSizeRel-6983f9c6312fbe2e3b69.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.4"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "libs/GLFW",
+					"targetIndexes" : 
+					[
+						1,
+						12
+					]
+				},
+				{
+					"build" : "libs/GLFW/src",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-libs.GLFW.src-MinSizeRel-c96c52d545149df53e02.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.4"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 1,
+					"source" : "libs/GLFW/src",
+					"targetIndexes" : 
+					[
+						7,
+						13
+					]
+				},
+				{
+					"build" : "libs/GLFW/docs",
+					"jsonFile" : "directory-libs.GLFW.docs-MinSizeRel-16e2ecb0a42e7e92cff5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.4"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 1,
+					"source" : "libs/GLFW/docs"
+				},
+				{
+					"build" : "libs/glad_cmake",
+					"jsonFile" : "directory-libs.glad_cmake-MinSizeRel-f4008dea6da68b26a8a0.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 2,
+					"source" : "libs/GLAD/cmake",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "libs/glm",
+					"childIndexes" : 
+					[
+						7
+					],
+					"jsonFile" : "directory-libs.glm-MinSizeRel-8a0974f6c956822cf119.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.6"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 3,
+					"source" : "libs/glm",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						3
+					],
+					"build" : "libs/glm/glm",
+					"jsonFile" : "directory-libs.glm.glm-MinSizeRel-8719f79a0c5d8cf9c58b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.6"
+					},
+					"parentIndex" : 6,
+					"projectIndex" : 3,
+					"source" : "libs/glm/glm",
+					"targetIndexes" : 
+					[
+						8
+					]
+				},
+				{
+					"build" : "Engine",
+					"jsonFile" : "directory-Engine-MinSizeRel-ada311b6ef8c12375156.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "Engine",
+					"targetIndexes" : 
+					[
+						9,
+						10,
+						11,
+						14
+					]
+				},
+				{
+					"build" : "main",
+					"jsonFile" : "directory-main-MinSizeRel-90eeead68c4afda84708.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "main",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "MinSizeRel",
+			"projects" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						0,
+						1,
+						4
+					],
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						8,
+						9
+					],
+					"name" : "OpenGL",
+					"targetIndexes" : 
+					[
+						0,
+						4,
+						5,
+						6,
+						9,
+						10,
+						11,
+						14
+					]
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						2
+					],
+					"directoryIndexes" : 
+					[
+						2,
+						3,
+						4
+					],
+					"name" : "GLFW",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						7,
+						12,
+						13
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						5
+					],
+					"name" : "glad",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						3
+					],
+					"directoryIndexes" : 
+					[
+						6,
+						7
+					],
+					"name" : "glm",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						3,
+						8
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-MinSizeRel-3ba03439da5f235e85cd.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "ALL_BUILD::@19fa6990a27c2de0d8bc",
+					"jsonFile" : "target-ALL_BUILD-MinSizeRel-a65d458d298ee2b5b8f9.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "ALL_BUILD::@106eacb33d70f2311c15",
+					"jsonFile" : "target-ALL_BUILD-MinSizeRel-b436c23e2300d15bb7c5.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "ALL_BUILD::@87d16e3dbd78f67ca781",
+					"jsonFile" : "target-ALL_BUILD-MinSizeRel-5cbb1182d8e3ec6de348.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "App::@15c4a824ab2728a3f5e7",
+					"jsonFile" : "target-App-MinSizeRel-c891a6c61cc76348f646.json",
+					"name" : "App",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-MinSizeRel-b69ff280a78bf02231b7.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "glad_gl_core_33::@10801ec9068017628f26",
+					"jsonFile" : "target-glad_gl_core_33-MinSizeRel-a63214173ee8cb258781.json",
+					"name" : "glad_gl_core_33",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "glfw::@ec1b498069e66c23ec05",
+					"jsonFile" : "target-glfw-MinSizeRel-031c1e9e9b89106b4f3d.json",
+					"name" : "glfw",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "glm::@9689ec0f31a21d795b02",
+					"jsonFile" : "target-glm-MinSizeRel-fe4f49297e35928b0d41.json",
+					"name" : "glm",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "graphics::@8f69bdd092c897d92c1e",
+					"jsonFile" : "target-graphics-MinSizeRel-12afb64e8f7f21afc512.json",
+					"name" : "graphics",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "shader::@8f69bdd092c897d92c1e",
+					"jsonFile" : "target-shader-MinSizeRel-3e93e7db15c3c3a1ccf9.json",
+					"name" : "shader",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "texture::@8f69bdd092c897d92c1e",
+					"jsonFile" : "target-texture-MinSizeRel-35193df0764be80ce71e.json",
+					"name" : "texture",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "uninstall::@19fa6990a27c2de0d8bc",
+					"jsonFile" : "target-uninstall-MinSizeRel-267255bd6c64260fc93e.json",
+					"name" : "uninstall",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "update_mappings::@ec1b498069e66c23ec05",
+					"jsonFile" : "target-update_mappings-MinSizeRel-7ad4d151424c4acea9b3.json",
+					"name" : "update_mappings",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "window::@8f69bdd092c897d92c1e",
+					"jsonFile" : "target-window-MinSizeRel-e876eec01aa95c8d1201.json",
+					"name" : "window",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"abstractTargets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "Python::Interpreter::@10801ec9068017628f26",
+					"jsonFile" : "target-Python__Interpreter-RelWithDebInfo-7f52c4e21b9c93d3c588.json",
+					"name" : "Python::Interpreter",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Python::InterpreterMultiConfig::@10801ec9068017628f26",
+					"jsonFile" : "target-Python__InterpreterMultiConfig-RelWithDebInfo-e04d90ee8b7a93e1f3ab.json",
+					"name" : "Python::InterpreterMultiConfig",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "Threads::Threads::@19fa6990a27c2de0d8bc",
+					"jsonFile" : "target-Threads__Threads-RelWithDebInfo-c77527efdd5eebb08d87.json",
+					"name" : "Threads::Threads",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "glm-header-only::@9689ec0f31a21d795b02",
+					"jsonFile" : "target-glm-header-only-RelWithDebInfo-bab73f60a1eaa0f1ff08.json",
+					"name" : "glm-header-only",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "stb_image::@10801ec9068017628f26",
+					"jsonFile" : "target-stb_image-RelWithDebInfo-d4b1b53b1086d474c481.json",
+					"name" : "stb_image",
+					"projectIndex" : 0
+				}
+			],
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						8,
+						9
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-RelWithDebInfo-f040eec181a89de70dbe.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						5
+					]
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						0,
+						1,
+						4
+					],
+					"build" : "libs",
+					"childIndexes" : 
+					[
+						2,
+						5,
+						6
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-libs-RelWithDebInfo-734d3a35b8c8173684fc.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "libs",
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						2
+					],
+					"build" : "libs/GLFW",
+					"childIndexes" : 
+					[
+						3,
+						4
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-libs.GLFW-RelWithDebInfo-6983f9c6312fbe2e3b69.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.4"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "libs/GLFW",
+					"targetIndexes" : 
+					[
+						1,
+						12
+					]
+				},
+				{
+					"build" : "libs/GLFW/src",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-libs.GLFW.src-RelWithDebInfo-504f10aaea735a458898.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.4"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 1,
+					"source" : "libs/GLFW/src",
+					"targetIndexes" : 
+					[
+						7,
+						13
+					]
+				},
+				{
+					"build" : "libs/GLFW/docs",
+					"jsonFile" : "directory-libs.GLFW.docs-RelWithDebInfo-16e2ecb0a42e7e92cff5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.4"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 1,
+					"source" : "libs/GLFW/docs"
+				},
+				{
+					"build" : "libs/glad_cmake",
+					"jsonFile" : "directory-libs.glad_cmake-RelWithDebInfo-f4008dea6da68b26a8a0.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 2,
+					"source" : "libs/GLAD/cmake",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "libs/glm",
+					"childIndexes" : 
+					[
+						7
+					],
+					"jsonFile" : "directory-libs.glm-RelWithDebInfo-8a0974f6c956822cf119.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.6"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 3,
+					"source" : "libs/glm",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						3
+					],
+					"build" : "libs/glm/glm",
+					"jsonFile" : "directory-libs.glm.glm-RelWithDebInfo-8719f79a0c5d8cf9c58b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.6"
+					},
+					"parentIndex" : 6,
+					"projectIndex" : 3,
+					"source" : "libs/glm/glm",
+					"targetIndexes" : 
+					[
+						8
+					]
+				},
+				{
+					"build" : "Engine",
+					"jsonFile" : "directory-Engine-RelWithDebInfo-ada311b6ef8c12375156.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "Engine",
+					"targetIndexes" : 
+					[
+						9,
+						10,
+						11,
+						14
+					]
+				},
+				{
+					"build" : "main",
+					"jsonFile" : "directory-main-RelWithDebInfo-90eeead68c4afda84708.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "main",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "RelWithDebInfo",
+			"projects" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						0,
+						1,
+						4
+					],
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						8,
+						9
+					],
+					"name" : "OpenGL",
+					"targetIndexes" : 
+					[
+						0,
+						4,
+						5,
+						6,
+						9,
+						10,
+						11,
+						14
+					]
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						2
+					],
+					"directoryIndexes" : 
+					[
+						2,
+						3,
+						4
+					],
+					"name" : "GLFW",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						7,
+						12,
+						13
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						5
+					],
+					"name" : "glad",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						3
+					],
+					"directoryIndexes" : 
+					[
+						6,
+						7
+					],
+					"name" : "glm",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						3,
+						8
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-RelWithDebInfo-3ba03439da5f235e85cd.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "ALL_BUILD::@19fa6990a27c2de0d8bc",
+					"jsonFile" : "target-ALL_BUILD-RelWithDebInfo-a65d458d298ee2b5b8f9.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "ALL_BUILD::@106eacb33d70f2311c15",
+					"jsonFile" : "target-ALL_BUILD-RelWithDebInfo-b436c23e2300d15bb7c5.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "ALL_BUILD::@87d16e3dbd78f67ca781",
+					"jsonFile" : "target-ALL_BUILD-RelWithDebInfo-5cbb1182d8e3ec6de348.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "App::@15c4a824ab2728a3f5e7",
+					"jsonFile" : "target-App-RelWithDebInfo-2c65906a672ff089129c.json",
+					"name" : "App",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-RelWithDebInfo-b69ff280a78bf02231b7.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "glad_gl_core_33::@10801ec9068017628f26",
+					"jsonFile" : "target-glad_gl_core_33-RelWithDebInfo-c30038c09f070252fd27.json",
+					"name" : "glad_gl_core_33",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "glfw::@ec1b498069e66c23ec05",
+					"jsonFile" : "target-glfw-RelWithDebInfo-ca282abe16cd98de50cc.json",
+					"name" : "glfw",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "glm::@9689ec0f31a21d795b02",
+					"jsonFile" : "target-glm-RelWithDebInfo-0b04fb767d1199a280ee.json",
+					"name" : "glm",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "graphics::@8f69bdd092c897d92c1e",
+					"jsonFile" : "target-graphics-RelWithDebInfo-84ede7cc6988bfc5033a.json",
+					"name" : "graphics",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "shader::@8f69bdd092c897d92c1e",
+					"jsonFile" : "target-shader-RelWithDebInfo-bbbcbc52794fc4a8c643.json",
+					"name" : "shader",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "texture::@8f69bdd092c897d92c1e",
+					"jsonFile" : "target-texture-RelWithDebInfo-1e67f8f7bfccdaef3e98.json",
+					"name" : "texture",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "uninstall::@19fa6990a27c2de0d8bc",
+					"jsonFile" : "target-uninstall-RelWithDebInfo-267255bd6c64260fc93e.json",
+					"name" : "uninstall",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "update_mappings::@ec1b498069e66c23ec05",
+					"jsonFile" : "target-update_mappings-RelWithDebInfo-7ad4d151424c4acea9b3.json",
+					"name" : "update_mappings",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "window::@8f69bdd092c897d92c1e",
+					"jsonFile" : "target-window-RelWithDebInfo-08b75de678c36ffaacba.json",
+					"name" : "window",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/shuc/Desktop/RenderEngine-OpenGL/build",
+		"source" : "C:/Users/shuc/Desktop/RenderEngine-OpenGL"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 10
+	}
+}
