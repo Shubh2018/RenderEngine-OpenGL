@@ -9,8 +9,8 @@ Mesh::Mesh()
 
 void Mesh::CreateCube()
 {
-    vertex.insert(
-        vertex.end(), {
+    vertices.insert(
+        vertices.end(), {
         //Front    
         {{ 1.f,  1.f, 1.f}, {1.f, 1.f}},
         {{ 1.f, -1.f, 1.f}, {1.f, 0.f}},
@@ -49,45 +49,6 @@ void Mesh::CreateCube()
         }
     );
 
-    // vertices.insert(
-    //     vertices.end(), {
-    //     //Front    
-    //      1.f,  1.f, 1.f, 1.f, 1.f,
-    //      1.f, -1.f, 1.f, 1.f, 0.f,
-    //     -1.f, -1.f, 1.f, 0.f, 0.f,
-    //     -1.f,  1.f, 1.f, 0.f, 1.f,
-
-    //     //Back
-    //      1.f,  1.f, -1.f, 1.f, 1.f,
-    //      1.f, -1.f, -1.f, 1.f, 0.f,
-    //     -1.f, -1.f, -1.f, 0.f, 0.f,
-    //     -1.f,  1.f, -1.f, 0.f, 1.f,
-
-    //     //Left
-    //     -1.f, -1.f,  1.f, 1.f, 1.f,
-    //     -1.f,  1.f,  1.f, 1.f, 0.f,
-    //     -1.f,  1.f, -1.f, 0.f, 0.f,
-    //     -1.f, -1.f, -1.f, 0.f, 1.f,
-
-    //     //Right
-    //      1.f, -1.f,  1.f, 1.f, 1.f,
-    //      1.f,  1.f,  1.f, 1.f, 0.f,
-    //      1.f,  1.f, -1.f, 0.f, 0.f,
-    //      1.f, -1.f, -1.f, 0.f, 1.f,
-
-    //     //Top
-    //      1.f,  1.f, -1.f, 1.f, 1.f,
-    //      1.f,  1.f,  1.f, 1.f, 0.f,
-    //     -1.f,  1.f,  1.f, 0.f, 0.f,
-    //     -1.f,  1.f, -1.f, 0.f, 1.f,
-
-    //     //Bottom
-    //      1.f, -1.f,  1.f, 1.f, 1.f,
-    //      1.f, -1.f, -1.f, 1.f, 0.f,
-    //     -1.f, -1.f, -1.f, 0.f, 0.f,
-    //     -1.f, -1.f,  1.f, 0.f, 1.f,
-    // });
-
     indices.insert(
         indices.end(), { 
         0, 1, 3,  
@@ -109,7 +70,7 @@ void Mesh::CreateCube()
         21, 22, 23
     });  
 
-    std::cout << vertex.size() * sizeof(Vertex) << " " << sizeof(float) << std::endl;
+    std::cout << vertices.size() * sizeof(Vertex) << " " << sizeof(float) << std::endl;
 
     glGenVertexArrays(1, &VAO);
     glGenBuffers(1, &VBO);
@@ -118,7 +79,7 @@ void Mesh::CreateCube()
     glBindVertexArray(VAO);
 
     glBindBuffer(GL_ARRAY_BUFFER, VBO);
-    glBufferData(GL_ARRAY_BUFFER, vertex.size() * sizeof(Vertex), vertex.data(), GL_STATIC_DRAW);
+    glBufferData(GL_ARRAY_BUFFER, vertices.size() * sizeof(Vertex), vertices.data(), GL_STATIC_DRAW);
 
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
     glBufferData(GL_ELEMENT_ARRAY_BUFFER, indices.size() * sizeof(indices.front()), indices.data(), GL_STATIC_DRAW);

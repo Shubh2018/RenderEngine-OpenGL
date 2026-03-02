@@ -19,10 +19,8 @@ class Mesh
 
         unsigned int VAO, VBO, EBO;
 
-        std::vector<float> vertices;
         std::vector<unsigned int> indices;
-
-        std::vector<Vertex> vertex;
+        std::vector<Vertex> vertices;
 
     public:
 
