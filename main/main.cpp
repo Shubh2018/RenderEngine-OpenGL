@@ -49,7 +49,7 @@ int main()
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
         glm::mat4 model(1.f);
-        model = glm::rotate(model, (float)glfwGetTime() * glm::radians(50.0f), glm::vec3(0.5f, 1.f, 0.f));
+        model = glm::rotate(model, (float)glfwGetTime() * glm::radians(50.0f), glm::vec3(1.f, 0.f, 0.f));
         model = glm::scale(model, glm::vec3(0.5f, 0.5f, 0.5f));
 
         glm::mat4 view(1.f);
