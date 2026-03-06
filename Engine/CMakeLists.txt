@@ -6,6 +6,7 @@ add_library(window ./src/window.cpp)
 add_library(graphics ./src/mesh.cpp)
 add_library(shader ./src/shader.cpp)
 add_library(texture ./src/texture.cpp)
+add_library(camera ./src/camera.cpp)
 
 target_include_directories(window 
 PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
@@ -19,7 +20,11 @@ PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
 target_include_directories(texture
 PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
+target_include_directories(camera
+PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
+
 target_link_libraries(window PUBLIC ${dependencies})
 target_link_libraries(graphics PUBLIC ${dependencies})
 target_link_libraries(shader PUBLIC ${dependencies})
 target_link_libraries(texture PUBLIC ${dependencies} stb_image)
+target_link_libraries(camera PUBLIC ${dependencies})

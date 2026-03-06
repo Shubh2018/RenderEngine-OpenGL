@@ -139,6 +139,10 @@
 		{
 			"backtrace" : 2,
 			"id" : "texture::@8f69bdd092c897d92c1e"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "camera::@8f69bdd092c897d92c1e"
 		}
 	],
 	"id" : "App::@15c4a824ab2728a3f5e7",
@@ -182,6 +186,11 @@
 			{
 				"backtrace" : 2,
 				"fragment" : "../Engine/libtexture.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../Engine/libcamera.a",
 				"role" : "libraries"
 			},
 			{

@@ -33,7 +33,7 @@
 				"libs/GLFW/src/libglfw3.a"
 			],
 			"targetId" : "glfw::@ec1b498069e66c23ec05",
-			"targetIndex" : 3,
+			"targetIndex" : 4,
 			"type" : "target"
 		}
 	],

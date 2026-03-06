@@ -292,6 +292,19 @@ texture/fast:
 .PHONY : texture/fast
 
 #=============================================================================
+# Target rules for targets named camera
+
+# Build rule for target.
+camera: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 camera
+.PHONY : camera
+
+# fast build rule for target.
+camera/fast:
+	$(MAKE) $(MAKESILENT) -f Engine/CMakeFiles/camera.dir/build.make Engine/CMakeFiles/camera.dir/build
+.PHONY : camera/fast
+
+#=============================================================================
 # Target rules for targets named App
 
 # Build rule for target.
@@ -320,6 +333,7 @@ help:
 	@echo "... uninstall"
 	@echo "... update_mappings"
 	@echo "... App"
+	@echo "... camera"
 	@echo "... glad_gl_core_33"
 	@echo "... glfw"
 	@echo "... glm"

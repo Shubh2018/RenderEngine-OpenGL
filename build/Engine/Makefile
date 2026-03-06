@@ -217,6 +217,44 @@ texture/fast:
 	cd /home/Shubh/Desktop/OpenGL/build && $(MAKE) $(MAKESILENT) -f Engine/CMakeFiles/texture.dir/build.make Engine/CMakeFiles/texture.dir/build
 .PHONY : texture/fast
 
+# Convenience name for target.
+Engine/CMakeFiles/camera.dir/rule:
+	cd /home/Shubh/Desktop/OpenGL/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Engine/CMakeFiles/camera.dir/rule
+.PHONY : Engine/CMakeFiles/camera.dir/rule
+
+# Convenience name for target.
+camera: Engine/CMakeFiles/camera.dir/rule
+.PHONY : camera
+
+# fast build rule for target.
+camera/fast:
+	cd /home/Shubh/Desktop/OpenGL/build && $(MAKE) $(MAKESILENT) -f Engine/CMakeFiles/camera.dir/build.make Engine/CMakeFiles/camera.dir/build
+.PHONY : camera/fast
+
+src/camera.o: src/camera.cpp.o
+.PHONY : src/camera.o
+
+# target to build an object file
+src/camera.cpp.o:
+	cd /home/Shubh/Desktop/OpenGL/build && $(MAKE) $(MAKESILENT) -f Engine/CMakeFiles/camera.dir/build.make Engine/CMakeFiles/camera.dir/src/camera.cpp.o
+.PHONY : src/camera.cpp.o
+
+src/camera.i: src/camera.cpp.i
+.PHONY : src/camera.i
+
+# target to preprocess a source file
+src/camera.cpp.i:
+	cd /home/Shubh/Desktop/OpenGL/build && $(MAKE) $(MAKESILENT) -f Engine/CMakeFiles/camera.dir/build.make Engine/CMakeFiles/camera.dir/src/camera.cpp.i
+.PHONY : src/camera.cpp.i
+
+src/camera.s: src/camera.cpp.s
+.PHONY : src/camera.s
+
+# target to generate assembly for a file
+src/camera.cpp.s:
+	cd /home/Shubh/Desktop/OpenGL/build && $(MAKE) $(MAKESILENT) -f Engine/CMakeFiles/camera.dir/build.make Engine/CMakeFiles/camera.dir/src/camera.cpp.s
+.PHONY : src/camera.cpp.s
+
 src/mesh.o: src/mesh.cpp.o
 .PHONY : src/mesh.o
 
@@ -325,10 +363,14 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... camera"
 	@echo "... graphics"
 	@echo "... shader"
 	@echo "... texture"
 	@echo "... window"
+	@echo "... src/camera.o"
+	@echo "... src/camera.i"
+	@echo "... src/camera.s"
 	@echo "... src/mesh.o"
 	@echo "... src/mesh.i"
 	@echo "... src/mesh.s"

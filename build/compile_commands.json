@@ -192,6 +192,12 @@
   "output": "Engine/CMakeFiles/texture.dir/src/texture.cpp.o"
 },
 {
+  "directory": "/home/Shubh/Desktop/OpenGL/build/Engine",
+  "command": "/usr/bin/g++  -I/home/Shubh/Desktop/OpenGL/Engine/include -I/home/Shubh/Desktop/OpenGL/build/libs/gladsources/glad_gl_core_33/include -I/home/Shubh/Desktop/OpenGL/libs/GLFW/include -I/home/Shubh/Desktop/OpenGL/libs/glm -g -o CMakeFiles/camera.dir/src/camera.cpp.o -c /home/Shubh/Desktop/OpenGL/Engine/src/camera.cpp",
+  "file": "/home/Shubh/Desktop/OpenGL/Engine/src/camera.cpp",
+  "output": "Engine/CMakeFiles/camera.dir/src/camera.cpp.o"
+},
+{
   "directory": "/home/Shubh/Desktop/OpenGL/build/main",
   "command": "/usr/bin/g++ -DSTB_IMAGE_IMPLEMENTATION -I/home/Shubh/Desktop/OpenGL/build/libs/gladsources/glad_gl_core_33/include -I/home/Shubh/Desktop/OpenGL/libs/GLFW/include -I/home/Shubh/Desktop/OpenGL/Engine/include -I/home/Shubh/Desktop/OpenGL/libs/glm -I/home/Shubh/Desktop/OpenGL/libs/./stb_image -g -o CMakeFiles/App.dir/main.cpp.o -c /home/Shubh/Desktop/OpenGL/main/main.cpp",
   "file": "/home/Shubh/Desktop/OpenGL/main/main.cpp",

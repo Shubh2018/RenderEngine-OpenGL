@@ -1,5 +1,7 @@
-main/CMakeFiles/App.dir/main.cpp.o: \
- /home/Shubh/Desktop/OpenGL/main/main.cpp /usr/include/stdc-predef.h \
+Engine/CMakeFiles/camera.dir/src/camera.cpp.o: \
+ /home/Shubh/Desktop/OpenGL/Engine/src/camera.cpp \
+ /usr/include/stdc-predef.h \
+ /home/Shubh/Desktop/OpenGL/Engine/include/camera.h \
  /home/Shubh/Desktop/OpenGL/build/libs/gladsources/glad_gl_core_33/include/glad/gl.h \
  /home/Shubh/Desktop/OpenGL/build/libs/gladsources/glad_gl_core_33/include/KHR/khrplatform.h \
  /usr/lib/gcc/x86_64-redhat-linux/15/include/stdint.h \
@@ -256,58 +258,6 @@ main/CMakeFiles/App.dir/main.cpp.o: \
  /home/Shubh/Desktop/OpenGL/libs/glm/glm/detail/type_half.inl \
  /home/Shubh/Desktop/OpenGL/libs/glm/glm/integer.hpp \
  /home/Shubh/Desktop/OpenGL/libs/glm/glm/detail/func_integer.inl \
- /home/Shubh/Desktop/OpenGL/libs/glm/glm/gtc/matrix_transform.hpp \
- /home/Shubh/Desktop/OpenGL/libs/glm/glm/gtc/../ext/matrix_projection.hpp \
- /home/Shubh/Desktop/OpenGL/libs/glm/glm/gtc/../ext/../gtc/constants.hpp \
- /home/Shubh/Desktop/OpenGL/libs/glm/glm/gtc/../ext/../gtc/../ext/scalar_constants.hpp \
- /home/Shubh/Desktop/OpenGL/libs/glm/glm/gtc/../ext/../gtc/../ext/../detail/setup.hpp \
- /home/Shubh/Desktop/OpenGL/libs/glm/glm/gtc/../ext/../gtc/../ext/scalar_constants.inl \
- /home/Shubh/Desktop/OpenGL/libs/glm/glm/gtc/../ext/../gtc/constants.inl \
- /home/Shubh/Desktop/OpenGL/libs/glm/glm/gtc/../ext/matrix_projection.inl \
- /home/Shubh/Desktop/OpenGL/libs/glm/glm/gtc/../ext/matrix_clip_space.hpp \
- /home/Shubh/Desktop/OpenGL/libs/glm/glm/gtc/../ext/matrix_clip_space.inl \
- /home/Shubh/Desktop/OpenGL/libs/glm/glm/gtc/../ext/matrix_transform.hpp \
- /home/Shubh/Desktop/OpenGL/libs/glm/glm/gtc/../ext/matrix_transform.inl \
- /home/Shubh/Desktop/OpenGL/libs/glm/glm/gtc/matrix_transform.inl \
- /home/Shubh/Desktop/OpenGL/libs/glm/glm/gtc/type_ptr.hpp \
- /home/Shubh/Desktop/OpenGL/libs/glm/glm/gtc/../gtc/quaternion.hpp \
- /home/Shubh/Desktop/OpenGL/libs/glm/glm/gtc/../gtc/../ext/vector_relational.hpp \
- /home/Shubh/Desktop/OpenGL/libs/glm/glm/gtc/../gtc/../ext/vector_relational.inl \
- /home/Shubh/Desktop/OpenGL/libs/glm/glm/gtc/../gtc/../ext/../detail/type_float.hpp \
- /home/Shubh/Desktop/OpenGL/libs/glm/glm/gtc/../gtc/../ext/../detail/setup.hpp \
- /home/Shubh/Desktop/OpenGL/libs/glm/glm/gtc/../gtc/../ext/quaternion_common.hpp \
- /home/Shubh/Desktop/OpenGL/libs/glm/glm/gtc/../gtc/../ext/../ext/quaternion_geometric.hpp \
- /home/Shubh/Desktop/OpenGL/libs/glm/glm/gtc/../gtc/../ext/../ext/quaternion_geometric.inl \
- /home/Shubh/Desktop/OpenGL/libs/glm/glm/gtc/../gtc/../ext/quaternion_common.inl \
- /home/Shubh/Desktop/OpenGL/libs/glm/glm/gtc/../gtc/../ext/quaternion_float.hpp \
- /home/Shubh/Desktop/OpenGL/libs/glm/glm/gtc/../gtc/../ext/../detail/type_quat.hpp \
- /home/Shubh/Desktop/OpenGL/libs/glm/glm/gtc/../gtc/../ext/../detail/../ext/quaternion_relational.hpp \
- /home/Shubh/Desktop/OpenGL/libs/glm/glm/gtc/../gtc/../ext/../detail/../ext/quaternion_relational.inl \
- /home/Shubh/Desktop/OpenGL/libs/glm/glm/gtc/../gtc/../ext/../detail/type_quat.inl \
- /home/Shubh/Desktop/OpenGL/libs/glm/glm/gtc/../gtc/../ext/quaternion_float_precision.hpp \
- /home/Shubh/Desktop/OpenGL/libs/glm/glm/gtc/../gtc/../ext/quaternion_double.hpp \
- /home/Shubh/Desktop/OpenGL/libs/glm/glm/gtc/../gtc/../ext/quaternion_double_precision.hpp \
- /home/Shubh/Desktop/OpenGL/libs/glm/glm/gtc/../gtc/../ext/quaternion_trigonometric.hpp \
- /home/Shubh/Desktop/OpenGL/libs/glm/glm/gtc/../gtc/../ext/quaternion_trigonometric.inl \
- /home/Shubh/Desktop/OpenGL/libs/glm/glm/gtc/../gtc/../ext/quaternion_transform.hpp \
- /home/Shubh/Desktop/OpenGL/libs/glm/glm/gtc/../gtc/../ext/quaternion_transform.inl \
- /home/Shubh/Desktop/OpenGL/libs/glm/glm/gtc/../gtc/quaternion.inl \
- /home/Shubh/Desktop/OpenGL/libs/glm/glm/gtc/../gtc/epsilon.hpp \
- /home/Shubh/Desktop/OpenGL/libs/glm/glm/gtc/../gtc/../detail/setup.hpp \
- /home/Shubh/Desktop/OpenGL/libs/glm/glm/gtc/../gtc/epsilon.inl \
- /home/Shubh/Desktop/OpenGL/libs/glm/glm/gtc/../gtc/vec1.hpp \
- /home/Shubh/Desktop/OpenGL/libs/glm/glm/gtc/../gtc/../ext/vector_bool1.hpp \
- /home/Shubh/Desktop/OpenGL/libs/glm/glm/gtc/../gtc/../ext/vector_bool1_precision.hpp \
- /home/Shubh/Desktop/OpenGL/libs/glm/glm/gtc/../gtc/../ext/vector_float1.hpp \
- /home/Shubh/Desktop/OpenGL/libs/glm/glm/gtc/../gtc/../ext/vector_float1_precision.hpp \
- /home/Shubh/Desktop/OpenGL/libs/glm/glm/gtc/../gtc/../ext/vector_double1.hpp \
- /home/Shubh/Desktop/OpenGL/libs/glm/glm/gtc/../gtc/../ext/vector_double1_precision.hpp \
- /home/Shubh/Desktop/OpenGL/libs/glm/glm/gtc/../gtc/../ext/vector_int1.hpp \
- /home/Shubh/Desktop/OpenGL/libs/glm/glm/gtc/../gtc/../ext/vector_int1_sized.hpp \
- /home/Shubh/Desktop/OpenGL/libs/glm/glm/gtc/../gtc/../ext/vector_uint1.hpp \
- /home/Shubh/Desktop/OpenGL/libs/glm/glm/gtc/../gtc/../ext/vector_uint1_sized.hpp \
- /usr/include/c++/15/cstring /usr/include/string.h /usr/include/strings.h \
- /home/Shubh/Desktop/OpenGL/libs/glm/glm/gtc/type_ptr.inl \
  /usr/include/c++/15/iostream /usr/include/c++/15/ostream \
  /usr/include/c++/15/bits/ostream.h /usr/include/c++/15/ios \
  /usr/include/c++/15/iosfwd /usr/include/c++/15/bits/stringfwd.h \
@@ -373,26 +323,4 @@ main/CMakeFiles/App.dir/main.cpp.o: \
  /usr/include/c++/15/bits/locale_facets.tcc \
  /usr/include/c++/15/bits/basic_ios.tcc \
  /usr/include/c++/15/bits/ostream.tcc /usr/include/c++/15/istream \
- /usr/include/c++/15/bits/istream.tcc /usr/include/c++/15/memory \
- /usr/include/c++/15/bits/stl_tempbuf.h \
- /usr/include/c++/15/bits/stl_raw_storage_iter.h \
- /usr/include/c++/15/bits/align.h /usr/include/c++/15/bits/unique_ptr.h \
- /usr/include/c++/15/bits/shared_ptr.h \
- /usr/include/c++/15/bits/shared_ptr_base.h \
- /usr/include/c++/15/bits/allocated_ptr.h \
- /usr/include/c++/15/ext/concurrence.h \
- /usr/include/c++/15/bits/shared_ptr_atomic.h \
- /usr/include/c++/15/bits/atomic_base.h \
- /usr/include/c++/15/bits/atomic_lockfree_defines.h \
- /usr/include/c++/15/backward/auto_ptr.h \
- /usr/include/c++/15/pstl/glue_memory_defs.h \
- /usr/include/c++/15/pstl/execution_defs.h \
- /home/Shubh/Desktop/OpenGL/Engine/include/window.h \
- /home/Shubh/Desktop/OpenGL/Engine/include/shader.h \
- /usr/include/c++/15/fstream /usr/include/c++/15/bits/codecvt.h \
- /usr/include/c++/15/x86_64-redhat-linux/bits/basic_file.h \
- /usr/include/c++/15/x86_64-redhat-linux/bits/c++io.h \
- /usr/include/c++/15/bits/fstream.tcc \
- /home/Shubh/Desktop/OpenGL/Engine/include/texture.h \
- /home/Shubh/Desktop/OpenGL/Engine/include/mesh.h \
- /home/Shubh/Desktop/OpenGL/Engine/include/camera.h
+ /usr/include/c++/15/bits/istream.tcc

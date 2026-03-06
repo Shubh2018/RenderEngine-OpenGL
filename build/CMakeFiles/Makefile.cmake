@@ -111,5 +111,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "Engine/CMakeFiles/graphics.dir/DependInfo.cmake"
   "Engine/CMakeFiles/shader.dir/DependInfo.cmake"
   "Engine/CMakeFiles/texture.dir/DependInfo.cmake"
+  "Engine/CMakeFiles/camera.dir/DependInfo.cmake"
   "main/CMakeFiles/App.dir/DependInfo.cmake"
   )

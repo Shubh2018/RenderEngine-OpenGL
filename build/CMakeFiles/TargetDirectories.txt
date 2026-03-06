@@ -56,6 +56,7 @@
 /home/Shubh/Desktop/OpenGL/build/Engine/CMakeFiles/graphics.dir
 /home/Shubh/Desktop/OpenGL/build/Engine/CMakeFiles/shader.dir
 /home/Shubh/Desktop/OpenGL/build/Engine/CMakeFiles/texture.dir
+/home/Shubh/Desktop/OpenGL/build/Engine/CMakeFiles/camera.dir
 /home/Shubh/Desktop/OpenGL/build/Engine/CMakeFiles/edit_cache.dir
 /home/Shubh/Desktop/OpenGL/build/Engine/CMakeFiles/rebuild_cache.dir
 /home/Shubh/Desktop/OpenGL/build/Engine/CMakeFiles/list_install_components.dir
