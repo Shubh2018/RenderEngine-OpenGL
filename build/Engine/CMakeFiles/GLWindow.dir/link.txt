@@ -1,2 +1,0 @@
-/usr/bin/ar qc libGLWindow.a CMakeFiles/GLWindow.dir/src/GLWindow.cpp.o
-/usr/bin/ranlib libGLWindow.a
